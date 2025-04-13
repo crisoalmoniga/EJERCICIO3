@@ -1,0 +1,54 @@
+# Archivos de Visual Studio
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.VC.opendb
+*.opensdf
+*.sdf
+*.ncb
+*.cache
+*.log
+*.tlog
+*.obj
+*.idb
+*.pdb
+*.ilk
+*.ipch
+
+# Configs de compilación y salida
+x64/
+x86/
+Debug/
+Release/
+*.exe
+*.dll
+*.lib
+*.exp
+
+# SFML/Box2D DLLs que ya están en la carpeta (¡no se suben!)
+sfml-*.dll
+openal32.dll
+box2d.dll
+
+# Archivos de build temporales
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Archivos innecesarios
+*.bak
+*.tmp
+*.old
+*.log
+*.DS_Store
+Thumbs.db
+
+# Visual Studio Code
+.vscode/
+
+# Proyecto de GitHub Desktop
+.git/
+.gitattributes
