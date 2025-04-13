@@ -1,0 +1,25 @@
+# === DLLs ===
+*.dll
+
+# === Archivos de compilación ===
+*.obj
+*.pdb
+*.idb
+*.ilk
+*.log
+*.clog
+
+# === Carpeta de Visual Studio ===
+.vs/
+Debug/
+Release/
+x64/
+ipch/
+
+# === Archivos temporales y de entorno ===
+*.tmp
+*.user
+*.suo
+*.VC.db
+*.VC.opendb
+.cache
