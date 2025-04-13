@@ -1,20 +1,16 @@
 #pragma once
 #include <SFML/Graphics.hpp>
-#include <Box2D/Box2D.h>
+#include <box2d/box2d.h>
+
+#define SCALE 100.0f
 
 class Pelota {
 public:
-    Pelota(b2World& world, float x, float y, float radius);
+    Pelota(b2World& world, float x, float y, float radius, bool esEstatica = false);
 
-    void update();
     void draw(sf::RenderWindow& window);
-    void setPosition(const sf::Vector2f& pos);
-    sf::Vector2f getPosition();
     b2Body* getBody();
-
-    bool isMouseNear(const sf::Vector2f& mousePos, float threshold = 30.0f);
-    bool contains(const sf::Vector2f& point);
-
+    bool contains(sf::Vector2f point);
 
 private:
     b2Body* body;
